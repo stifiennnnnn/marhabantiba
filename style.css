@@ -29,11 +29,19 @@ article {
     margin: 10px auto;
     padding: 20px 35px;
     border: 2px solid #111213;
-    border-radius: 10px;    
+    border-radius: 10px;
+    border-bottom-color: goldenrod;  
     background-color: #111213;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .doa1, .doa2 {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
 }

@@ -39,9 +39,10 @@ article {
     flex-direction: column;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .doa1, .doa2 {
         padding: 10px 15px;
         font-size: 20px;
     }
 }
+

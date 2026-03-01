@@ -39,7 +39,7 @@ article {
     flex-direction: row;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .container {
         flex-direction: column;
     }
@@ -52,6 +52,7 @@ article {
         font-size: 15px;
     }
 }
+
 
 
 

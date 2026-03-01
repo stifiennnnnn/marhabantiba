@@ -36,11 +36,12 @@ article {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 @media (max-width: 700px) {
     .doa1, .doa2 {
+        flex-direction: column;
         padding: 10px 15px;
         font-size: 20px;
     }
@@ -48,6 +49,7 @@ article {
         font-size: 15px;
     }
 }
+
 
 
 

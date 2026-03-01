@@ -36,11 +36,12 @@ article {
 
 .container {
     display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 700px) {
     .container {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     
     .doa1, .doa2 {
@@ -51,6 +52,7 @@ article {
         font-size: 15px;
     }
 }
+
 
 
 

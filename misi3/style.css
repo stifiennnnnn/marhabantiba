@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #18191a;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(4, 80, 4);
+    padding: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.top-section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #111213   ;
+    border-radius: 10px;
+    border: 1px solid #4e4f50;
+}
+
+#selectform {
+    display: block;
+    margin: 10px auto 0;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    background-color: #3a3b3c;
+    color: white;
+    border: 1px solid #4e4f50;
+    border-radius: 10px;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch; 
+}
+
+.kalkulator, .hasil {
+    flex: 1;
+    background-color: #111213;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #3a3b3c;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.kalkulator {
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(221, 212, 197);
+    border: 1px solid #4e4f50;
+    color: black;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.calc {
+    display: none;
+}
+
+.tombol {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+button:hover {
+    border: 2px solid goldenrod;
+}
+
+button:active {
+    border: none;
+}
+
+button:first-child { background-color: green; color: white; }
+button:last-child { background-color: #9e1d0f; color: white; }
+
+.hasil h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #3a3b3c;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(190, 144, 26);
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .bottom-section {
+        flex-direction: column;
+    }
+}

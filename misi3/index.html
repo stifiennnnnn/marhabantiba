@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Zakat</title>
+</head>
+<header>
+    <h1>Kalkulator Zakat</h1>
+</header>
+<body>
+    <main>
+    <div class="top-section">
+        <label for="selectform">Pilih Jenis Zakat:</label>
+        <select id="selectform">
+            <option value="penghasilan">Zakat Penghasilan</option>
+            <option value="emas">Zakat Emas</option>
+        </select>
+    </div>
+
+    <div class="bottom-section">
+        <section class="kalkulator">
+            <div id="calcpenghasilan" class="calc">
+                <h2>Penghasilan</h2>
+                <label for="inputgaji">Gaji Pokok:</label>
+                <input type="text" id="inputgaji">
+                <br><br>
+                <label for="inputlain">Pendapatan Lain:</label>
+                <input type="text" id="inputlain">
+            </div>
+
+            <div id="calcemas" class="calc">
+                <h2>Emas</h2>
+                <label for="inputemas">Berat Emas (gram):</label>
+                <input type="text" id="inputemas">
+            </div>
+
+            <div class="tombol">
+                <button type="button" onclick="itung()">Hitung</button>
+                <button type="button" onclick="reset()">Reset</button>
+            </div>
+        </section>
+
+        <section class="hasil">
+            <h2>Hasil Perhitungan</h2>
+            <h4>Total Harta: <span id="total"></span></h4>
+            <h4>Nisab: <span id="nisab"></span></h4>
+            <h4>Status: <span id="status"></span></p>
+            <h4>Zakat Yang Harus Dibayar: <span id="hasil"></span></h4>
+        </section>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+<footer>
+    <p>2026</p>
+</footer>
+</html>

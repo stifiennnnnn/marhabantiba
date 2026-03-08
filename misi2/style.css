@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #18191a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(4, 80, 4);
+    padding: 10px 40px;
+    text-align: left;
+}
+
+.pala {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.judul {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.interface {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #242526;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.counter {
+    background-color: #3a3b3c;
+    color: goldenrod;
+    padding: 40px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 4px solid #111213;
+}
+
+.counter h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.selamat{
+    display: none;
+}
+
+.control {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btn-reset {
+    background-color: #801a00;
+}
+
+.btn-reset:hover {
+    background-color: #491205;
+}
+
+.noti {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 10000;
+    right: 30px;
+    bottom: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s;
+}
+
+.noti.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+}
+
+@keyframes fadein { from {right: 0; opacity: 0;} to {right: 30px; opacity: 1;} }
+@keyframes fadeout { from {right: 30px; opacity: 1;} to {right: 0; opacity: 0;} }
+
+footer {
+    background-color: #b8860b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+footer p { margin: 0; font-size: 16px; }
+
+.menu-toggle {
+    background: none !important; 
+    border: none !important;     
+    color: white;               
+    font-size: 30px;            
+    padding: 0;                 
+    cursor: pointer;
+    box-shadow: none !important;
+    display: none;
+}
+
+.menu-toggle:hover {
+    background: none !important;
+    transform: none !important;   
+}
+
+@media (max-width: 768px) {
+    button { 
+        font-size: 15px;
+    }
+    .pala {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #034003;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    nav.active {
+        display: flex !important;
+    }
+
+    nav a {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}

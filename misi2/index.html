@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter Dzikir - To-Do List Ramadhan</title>
+</head>
+<body class="dzikir-page">
+    <header>
+        <div class="pala">
+            <img src="/misi4/img/logo.png" width="100px" height="100px" alt="Logo">
+            <h1 class="judul">To-Do List Ramadhan</h1>
+            <button id="menu-mobile" class="menu-toggle">☰</button>
+        </div>  
+        <nav id="nav-list">
+            <a href="/misi4/index.html">Shalat</a>
+            <a href="/misi4/quran.html">Qur'an</a>
+            <a href="/misi4/puasa.html">Puasa</a>
+            <a href="/misi2/index.html" class="activd">Dzikir</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="interface">
+            <div class="summary-section">
+                <p>Target Dzikir Hari Ini: <strong>33</strong></p>
+            </div>
+
+            <div class="counter">
+                <h2 id="angka">0</h2>
+                <small id="selamat"></small>
+            </div>
+
+            <div class="control">
+                <button id="dzikir">Klik Aku Untuk Tambah</button>
+                <button id="reset" class="btn-reset">Reset</button>
+            </div>
+        </section>
+    </main>
+    <div id="notify" class="noti">Target Tercapai!</div>
+    <footer>
+        <p>2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -15,6 +15,9 @@ body {
 header {
     background-color: rgb(4, 80, 4);
     padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .pala {
@@ -443,3 +446,4 @@ footer p {
     }
 
 }
+

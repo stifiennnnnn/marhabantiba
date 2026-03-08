@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Puasa - To-Do List Ramadhan</title>
+</head>
+<body class="puasa-page">
+    <header>
+        <div class="pala">
+            <img src="img/logo.png" width="100px" height="100px" alt="Logo">
+            <h1 class="judul">To-Do List Ramadhan</h1>
+            <button id="menu-mobile" class="menu-toggle">☰</button>
+        </div>  
+        <nav id="nav-list">
+            <a href="index.html">Shalat</a>
+            <a href="quran.html">Qur'an</a>
+            <a href="puasa.html">Puasa</a>
+            <a href="../misi2/index.html">Dzikir</a>
+        </nav>
+        </header>
+    </header>
+    <main class="main-content">
+        <div class="summary-section">       
+            <p>Total Puasa: <span id="total-puasa">0</span> Hari</p>
+            <p>Status: <span id="global-motivation-status">Semangat Puasanya!</span></p>
+        </div>
+        <section class="checklist-container">
+            <h2 class="sub-judul">Kalender Puasa Ramadhan</h2>
+            <div id="calendar-grid" class="calendar-grid">
+            </div>
+            <button class="btn-simpan" onclick="savePuasa()">Simpan Puasa</button>
+        </section>
+    </main>
+    <div id="toast" class="toast">Data puasa berhasil disimpan!</div>
+    <footer>
+        <p>2026</p>
+    </footer>
+    <script src="puasa.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Baca Al-Qur'an - To-Do List Ramadhan</title>
+</head>
+<body class="quran-page">
+    <header>
+        <div class="pala">
+            <img src="img/logo.png" width="100px" height="100px" alt="Logo">
+            <h1 class="judul">To-Do List Ramadhan</h1>
+            <button id="menu-mobile" class="menu-toggle">☰</button>
+        </div>  
+        <nav id="nav-list">
+            <a href="index.html">Shalat</a>
+            <a href="quran.html">Qur'an</a>
+            <a href="puasa.html">Puasa</a>
+            <a href="../misi2/index.html">Dzikir</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="summary-section">       
+            <p>Ringkasan Progress Harian: <span id="global-progress-percent">0</span>%</p>
+            <p>Status Motivasi: <span id="global-motivation-status">Ayo rajin membaca Al-Qur'an!</span></p>
+        </div>
+        <section class="checklist-container">
+            <h2 class="sub-judul">Baca Qur'an</h2>
+            <div class="progress-outer">
+                <div id="quran-bar" class="progress-inner"></div>
+            </div>
+            <div class="input-group">
+                <div class="field">
+                    <label>Input target halaman:</label>
+                    <input type="number" id="target-hal" oninput="updateQuran()">
+                </div>
+                <div class="field">
+                    <label>Input halaman dibaca:</label>
+                    <input type="number" id="baca-hal" oninput="updateQuran()">
+                </div>
+            </div>
+            <div class="status-box">
+                <p>Status: <span id="status-otomatis">Masih bisa ditambah</span></p>
+            </div>
+            <button class="btn-simpan">Simpan</button>
+        </section>
+    </main>
+    <footer>
+        <p>2026</p>
+    </footer>
+    <script src="quran.js"></script>
+    <div id="toast" class="toast">Data berhasil disimpan!</div>
+</body>
+</html>

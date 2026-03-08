@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 .selamat{
-    display: none;
+    display: none !important;
 }
 
 .control {
@@ -183,7 +183,11 @@ footer p { margin: 0; font-size: 16px; }
     transform: none !important;   
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
+    .interface {
+        margin-bottom: 5px;
+    }
+
     button { 
         font-size: 15px;
     }
@@ -193,6 +197,7 @@ footer p { margin: 0; font-size: 16px; }
         align-items: center;
         width: 100%;
     }
+
     .menu-toggle {
         display: block;
     }

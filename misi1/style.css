@@ -7,7 +7,7 @@ body {
     grid-template-rows: auto 2fr auto;
     min-height: 100vh;
     margin: 0;
-    background-color: #18191a;
+    background-color: #0a1a0a;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,17 +15,25 @@ body {
 header {
     margin-bottom: 30px;
     padding: 20px 20px;
-    background-color: rgb(4, 80, 4);
+    background-color: #052e05;
+    border-bottom: 2px solid #b8860b;
+    color: #ffd700;
+    text-align: center;
 }
 
 footer {
-    background-color: rgb(190, 144, 26);
+    background-color: #052e05;
+    border-top: 2px solid #b8860b;
+    color: #ffd700;
+    text-align: center;
+    padding: 15px;
 }
 
 article {
     display: block;
     font-size: 30px;      
     padding-bottom: 15px;     
+    color: #ffd700;
 }
 
 .doa1, .doa2 {
@@ -34,11 +42,11 @@ article {
     margin: 10px auto;
     margin-top: 25px;
     padding: 20px 35px;
-    border: 2px solid #111213;
+    border: 2px solid #2d4a2d;
     border-radius: 10px;    
     border-bottom-width: 10px;
-    border-bottom-color: goldenrod;  
-    background-color: #111213;
+    border-bottom-color: #b8860b;
+    background-color: #142b14;
 }
 
 .container {

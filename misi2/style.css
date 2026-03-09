@@ -5,7 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #18191a;
+    background-color: #0a1a0a;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -13,12 +13,14 @@ body {
 }
 
 header {
-    background-color: rgb(4, 80, 4);
+    background-color: #052e05;
     padding: 10px 40px;
     text-align: left;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #b8860b;
+    color: #ffd700;
 }
 
 .pala {
@@ -31,6 +33,7 @@ header {
 .judul {
     margin: 0;
     font-size: 28px;
+    color: #ffd700;
 }
 
 nav {
@@ -48,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-    color: goldenrod;
+    color: #ffd700;
 }
 
 .main-content {
@@ -62,18 +65,19 @@ nav a:hover {
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #242526;
+    background-color: #142b14;
     padding: 30px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 1px solid #2d4a2d;
 }
 
 .counter {
-    background-color: #3a3b3c;
-    color: goldenrod;
+    background-color: #1c331c;
+    color: #ffd700;
     padding: 40px;
     border-radius: 50%;
     width: 200px;
@@ -83,7 +87,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    border: 4px solid #111213;
+    border: 4px solid #b8860b;
 }
 
 .counter h2 {
@@ -92,7 +96,7 @@ nav a:hover {
 }
 
 .selamat{
-    display: none !important;
+    display: none;
 }
 
 .control {
@@ -104,7 +108,7 @@ nav a:hover {
 button {
     background-color: #008000;
     color: white;
-    border: none;
+    border: 1px solid #ffd700;
     padding: 7px 14px;
     border-radius: 50px;
     font-weight: bold;
@@ -123,17 +127,18 @@ button:active {
 }
 
 .btn-reset {
-    background-color: #801a00;
+    background-color: #4a0000;
+    border-color: #801a00;
 }
 
 .btn-reset:hover {
-    background-color: #491205;
+    background-color: #600000;
 }
 
 .noti {
     visibility: hidden;
     min-width: 250px;
-    background-color: #4caf50;
+    background-color: #008000;
     color: white;
     text-align: center;
     border-radius: 8px;
@@ -143,9 +148,10 @@ button:active {
     right: 30px;
     bottom: 30px;
     font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     opacity: 0;
     transition: opacity 0.5s, bottom 0.5s;
+    border: 1px solid #ffd700;
 }
 
 .noti.show {
@@ -158,19 +164,20 @@ button:active {
 @keyframes fadeout { from {right: 30px; opacity: 1;} to {right: 0; opacity: 0;} }
 
 footer {
-    background-color: #b8860b;
-    color: white;
+    background-color: #052e05; 
+    color: #ffd700; 
     text-align: center;
     padding: 15px;
     margin-top: auto;
+    border-top: 2px solid #b8860b;
 }
 
 footer p { margin: 0; font-size: 16px; }
 
 .menu-toggle {
     background: none !important; 
-    border: none !important;     
-    color: white;               
+    border: none !important;      
+    color: #ffd700;               
     font-size: 30px;            
     padding: 0;                 
     cursor: pointer;
@@ -206,7 +213,7 @@ footer p { margin: 0; font-size: 16px; }
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #034003;
+        background-color: #052e05;
         padding: 10px 0;
         gap: 10px;
     }
@@ -219,6 +226,6 @@ footer p { margin: 0; font-size: 16px; }
         padding: 15px;
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 215, 0, 0.1);
     }
 }

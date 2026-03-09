@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #18191a;
+    background-color: #0a1a0a;
     color: #e4e6eb;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -13,11 +13,12 @@ body {
 }
 
 header {
-    background-color: rgb(4, 80, 4);
-    color: white;
+    background-color: #052e05;
+    color: #ffd700;
     padding: 20px 10px;
     text-align: left;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border-bottom: 2px solid #b8860b;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -27,6 +28,7 @@ header {
 
 header h1 {
     margin-top: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 header img {
@@ -37,8 +39,9 @@ footer {
     text-align: center;
     padding: 15px;
     font-size: 13px;
-    background-color: #b8860b;
-    color: white;
+    background-color: #052e05;
+    color: #b8860b;
+    border-top: 2px solid #b8860b;
     font-weight: bold;
     margin-top: 40px;
     width: 100%;
@@ -48,10 +51,10 @@ footer {
     max-width: 1000px;
     width: 95%; 
     margin: 20px auto;
-    background: #242526;
+    background: #142b14;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.6), 0 0 10px rgba(184, 134, 11, 0.1);
 }
 
 .controls {
@@ -66,9 +69,9 @@ select {
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 8px;
-    border: 2px solid goldenrod;
-    background-color: #3a3b3c;
-    color: white;
+    border: 2px solid #b8860b;
+    background-color: #1c331c;
+    color: #ffd700;
     cursor: pointer;
     width: 100%;
     max-width: 350px;
@@ -77,7 +80,7 @@ select {
 .table-wrapper {
     overflow-x: auto; 
     border-radius: 8px;
-    border: 1px solid #3a3b3c;
+    border: 1px solid #2d4a2d;
     width: 100%;
 }
 
@@ -88,27 +91,29 @@ table {
 }
 
 thead {
-    background-color: rgb(4, 80, 4);
+    background-color: #052e05;
 }
 
 th, td {
     padding: 14px;
     text-align: center;
-    border: 1px solid #3a3b3c; 
+    border: 1px solid #2d4a2d; 
 }
 
 th {
     text-transform: uppercase;
     font-size: 13px;
-    color: white;
+    color: #ffd700;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #1c1d1e;
+    background-color: #0d210d;
 }
 
 tr.hariIni {
     font-weight: bold;
+    color: #ffd700;
+    background-color: #1a3a1a !important;
 }
 
 @media screen and (max-width: 768px) {

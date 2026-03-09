@@ -5,7 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #18191a;
+    background-color: #0a1a0a; 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -13,11 +13,13 @@ body {
 }
 
 header {
-    background-color: rgb(4, 80, 4);
+    background-color: #052e05; 
     padding: 10px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #b8860b;
+    color: #ffd700;
 }
 
 .pala {
@@ -31,7 +33,7 @@ header {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: #ffd700; 
     font-size: 30px;
     cursor: pointer;
 }
@@ -39,6 +41,7 @@ header {
 .judul {
     margin: 0;
     font-size: 28px;
+    color: #ffd700; 
 }
 
 nav {
@@ -56,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-    color: goldenrod;
+    color: #ffd700; 
 }
 
 .main-content {
@@ -115,7 +118,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); 
     gap: 10px;
-    background: #242526;
+    background: #142b14; 
     padding: 15px;
     border-radius: 12px;
     margin: 20px auto !important; 
@@ -125,22 +128,16 @@ nav a:hover {
     align-content: center;
 }
 
-.puasa-page .checklist-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
 .puasa-page h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #ffd700; 
 }
 
 .day-box {
     aspect-ratio: 1/1;
-    background-color: #3a3b3c;
+    background-color: #1c331c; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,16 +146,17 @@ nav a:hover {
     font-weight: bold;
     transition: 0.3s;
     border: 2px solid transparent;
+    color: white;
 }
 
 .day-box:hover {
-    background-color: #4a4b4c;
+    background-color: #2d4a2d; 
 }
 
 .day-box.completed {
-    background-color: #008000;
+    background-color: #008000; 
     color: white;
-    border-color: #4caf50;
+    border-color: #ffd700; 
 }
 
 .puasa-page .btn-simpan {
@@ -174,7 +172,7 @@ nav a:hover {
 }
 
 .progress-outer {
-    background-color: #3a3b3c;
+    background-color: #1c331c; 
     border-radius: 10px;
     height: 12px;
     overflow: hidden;
@@ -183,7 +181,7 @@ nav a:hover {
 }
 
 .progress-inner {
-    background-color: #4caf50;
+    background-color: #ffd700; 
     width: 0%;
     height: 100%;
     transition: 0.4s ease;
@@ -204,21 +202,22 @@ nav a:hover {
 .field label {
     font-weight: bold;
     font-size: 16px;
+    color: #ffd700; 
 }
 
 .field input {
     width: 100%;
     margin-top: 10px;
     padding: 15px;
-    background: #242526;
-    border: 1px solid #3a3b3c;
+    background: #142b14; 
+    border: 1px solid #b8860b; 
     color: white;
     border-radius: 8px;
     font-size: 16px;
 }
 
 .status-box {
-    background: #242526;
+    background: #142b14; 
     padding-left: 15px;
     border-radius: 8px;
     margin-top: 5px;
@@ -255,7 +254,7 @@ nav a:hover {
 .item-check {
     display: flex;
     align-items: center;
-    background-color: #242526;
+    background-color: #142b14; 
     padding: 18px 20px;
     border-radius: 12px;
     cursor: pointer;
@@ -269,7 +268,7 @@ nav a:hover {
 .btn-reset {
     padding: 12px 25px;
     transition: opacity 0.3s;
-    background-color: #801a00;
+    background-color: #4a0000; 
     color: white;
     border: none;
     border-radius: 8px;
@@ -286,7 +285,7 @@ nav a:hover {
 .toast {
     visibility: hidden;
     min-width: 250px;
-    background-color: #4caf50;
+    background-color: #008000;
     color: white;
     text-align: center;
     border-radius: 8px;
@@ -321,7 +320,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 9999;
     align-items: center;
     justify-content: center;
@@ -332,7 +331,7 @@ nav a:hover {
 }
 
 .modal-box {
-    background-color: #242526;
+    background-color: #142b14; 
     padding: 25px;
     border-radius: 15px;
     width: 90%;
@@ -340,18 +339,18 @@ nav a:hover {
     text-align: center;
     color: white;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    border: 1px solid #3a3b3c;
+    border: 1px solid #b8860b; 
 }
 
 .modal-box h3 {
     margin-top: 0;
     font-size: 20px;
-    color: #e4e6eb;
+    color: #ffd700; 
 }
 
 .modal-box p {
     font-size: 16px;
-    color: #b0b3b8;
+    color: #e4e6eb;
     margin-bottom: 20px;
 }
 
@@ -373,12 +372,12 @@ nav a:hover {
 }
 
 .btn-cancel {
-    background-color: #3a3b3c;
+    background-color: #2d4a2d; 
     color: white;
 }
 
 .btn-confirm {
-    background-color: #801a00;
+    background-color: #4a0000; 
     color: white;
 }
 
@@ -387,11 +386,12 @@ nav a:hover {
 }
 
 footer {
-    background-color: #b8860b;
-    color: white;
+    background-color: #052e05; 
+    color: #ffd700; 
     text-align: center;
     padding: 12px;
     margin-top: auto;
+    border-top: 2px solid #b8860b;
 }
 
 footer p {
@@ -429,7 +429,7 @@ footer p {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #034003;
+        background-color: #052e05; 
         padding: 10px 0;
         gap: 10px;
     }
@@ -442,8 +442,6 @@ footer p {
         padding: 15px;
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 215, 0, 0.1);
     }
-
 }
-

@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #18191a;
+    color: #e4e6eb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: rgb(4, 80, 4);
+    color: white;
+    padding: 20px 10px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    margin-top: 40px;
+}
+
+header img {
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    background-color: #b8860b;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 95%; 
+    margin: 20px auto;
+    background: #242526;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+select {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid goldenrod;
+    background-color: #3a3b3c;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 350px;
+}
+
+.table-wrapper {
+    overflow-x: auto; 
+    border-radius: 8px;
+    border: 1px solid #3a3b3c;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    min-width: 650px; 
+}
+
+thead {
+    background-color: rgb(4, 80, 4);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #3a3b3c; 
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #1c1d1e;
+}
+
+tr.hariIni {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 !important; 
+    }
+
+    header, footer {
+        border-radius: 0;
+    }
+
+    .container {
+        width: 100% !important; 
+        margin: 0 auto !important;
+        padding: 20px 10px !important; 
+        border-radius: 0 !important; 
+    }
+
+    table {
+        min-width: 600px !important; 
+    }
+}

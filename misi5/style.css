@@ -43,7 +43,6 @@ footer {
     color: #b8860b;
     border-top: 2px solid #b8860b;
     font-weight: bold;
-    margin-top: 40px;
     width: 100%;
 }
 
@@ -136,3 +135,4 @@ tr.hariIni {
         min-width: 600px !important; 
     }
 }
+

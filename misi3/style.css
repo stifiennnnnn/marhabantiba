@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #18191a;
+    background-color: #0a1a0a;
     color: whitesmoke;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,8 +14,10 @@ body {
 
 header {
     text-align: center;
-    background-color: rgb(4, 80, 4);
+    background-color: #052e05;
     padding: 15px;
+    border-bottom: 2px solid #b8860b;
+    color: #ffd700;
 }
 
 main {
@@ -32,9 +34,9 @@ main {
     text-align: center;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #111213   ;
+    background-color: #142b14;
     border-radius: 10px;
-    border: 1px solid #4e4f50;
+    border: 1px solid #2d4a2d;
 }
 
 #selectform {
@@ -43,9 +45,9 @@ main {
     width: 100%;
     max-width: 400px;
     padding: 12px;
-    background-color: #3a3b3c;
+    background-color: #1c331c;
     color: white;
-    border: 1px solid #4e4f50;
+    border: 1px solid #b8860b;
     border-radius: 10px;
 }
 
@@ -58,11 +60,11 @@ main {
 
 .kalkulator, .hasil {
     flex: 1;
-    background-color: #111213;
+    background-color: #142b14;
     padding: 25px;
     border-radius: 10px;
-    border: 1px solid #3a3b3c;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border: 1px solid #2d4a2d;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
 }
@@ -74,8 +76,8 @@ main {
 input {
     width: 100%;
     padding: 12px;
-    background-color: rgb(221, 212, 197);
-    border: 1px solid #4e4f50;
+    background-color: #ede7de;
+    border: 1px solid #b8860b;
     color: black;
     border-radius: 10px;
     margin-top: 8px;
@@ -103,26 +105,36 @@ button {
 }
 
 button:hover {
-    border: 2px solid goldenrod;
+    border: 2px solid #ffd700;
 }
 
 button:active {
     border: none;
 }
 
-button:first-child { background-color: green; color: white; }
-button:last-child { background-color: #9e1d0f; color: white; }
+button:first-child { 
+    background-color: #008000;
+    color: white; 
+}
+
+button:last-child { 
+    background-color: #4a0000;
+    color: white; 
+}
 
 .hasil h2 {
     margin-top: 0;
-    border-bottom: 1px solid #3a3b3c;
+    border-bottom: 1px solid #2d4a2d;
     padding-bottom: 10px;
+    color: #ffd700;
 }
 
 footer {
     text-align: center;
-    background-color: rgb(190, 144, 26);
+    background-color: #052e05; 
     padding: 15px;
+    border-top: 2px solid #b8860b;
+    color: #ffd700;
 }
 
 @media (max-width: 768px) {

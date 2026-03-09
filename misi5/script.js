@@ -37,7 +37,7 @@ function renderTabel(data) {
     const hariIni = new Date().toLocaleDateString('en-CA'); 
 
     data.forEach(hari => {
-        const isHariIni = hari.date === hariIni ? "style='background-color: #4d4b42; font-weight: bold;'" : "";
+        const isHariIni = hari.date === hariIni ? "style='background-color: #1a3a1a; font-weight: bold; color: #ffd700;'" : "";
         const baris = `
             <tr ${isHariIni}>
                 <td>${hari.tanggal}</td>

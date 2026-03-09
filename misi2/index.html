@@ -14,13 +14,19 @@
             <button id="menu-mobile" class="menu-toggle">☰</button>
         </div>  
         <nav id="nav-list">
-            <a href="../misi4/index.html">Shalat</a>
-            <a href="../misi4/quran.html">Qur'an</a>
-            <a href="../misi4/puasa.html">Puasa</a>
-            <a href="index.html" class="active">Dzikir</a>
+            <a href="/misi4/index.html">Shalat</a>
+            <a href="/misi4/quran.html">Qur'an</a>
+            <a href="/misi4/puasa.html">Puasa</a>
+            <a href="/misi2/index.html" class="active">Dzikir</a>
         </nav>
     </header>
+
     <main class="main-content">
+        <div class="summary-section">
+            <p>Progres: <span id="persen-dzikir">0%</span></p>
+            <p>Status: <span id="status-dzikir">Ayo Mulai Dzikir!</span></p>
+        </div>
+
         <section class="interface">
             <div class="summary-section">
                 <p>Target Dzikir Hari Ini: <strong>33</strong></p>
@@ -28,7 +34,7 @@
 
             <div class="counter">
                 <h2 id="angka">0</h2>
-                <small id="selamat"></small>
+                <small id="selamat" class="selamat"></small>
             </div>
 
             <div class="control">
@@ -37,14 +43,13 @@
             </div>
         </section>
     </main>
+
     <div id="notify" class="noti">Target Tercapai!</div>
+
     <footer>
         <p>2026</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-

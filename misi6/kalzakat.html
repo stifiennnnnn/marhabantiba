@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat - Marhaban</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Habibi" rel="stylesheet">
+</head>
+<body class="zakat-page">
+
+    <nav>
+        <div class="logo-area">
+            <img class="logo-icon" src="../img/logo1.png" alt="Logo">
+            <h1 class="logo-text">Marhaban</h1>
+        </div>
+        <button id="menu-mobile" class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="jadwal.html">Jadwal Imsakiyah</a></li>
+            <li><a href="shalat.html">Tracker Shalat</a></li>
+            <li><a href="kalzakat.html" class="active">Kalkulator Zakat</a></li>
+            <li><a href="dzikir.html">Counter Dzikir</a></li>
+            <li><a href="quran.html">Baca Qur'an</a></li>
+            <li><a href="puasa.html">Kalender Puasa</a></li>
+            <li><a href="doashur.html">Doa Sahur & Buka</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header-banner">
+            <h1>Kalkulator Zakat</h1>
+        </header>
+
+        <div class="zakat-wrapper">
+            <div class="selection-box">
+                <label for="selectform">Pilih Jenis Zakat:</label>
+                <select id="selectform">
+                    <option value="penghasilan">Zakat Penghasilan</option>
+                    <option value="emas">Zakat Emas</option>
+                </select>
+            </div>
+
+            <div class="zakat-grid">
+                <section class="zakat-card input-section">
+                    <div id="calcpenghasilan" class="calc-group">
+                        <h2>Penghasilan</h2>
+                        <div class="field">
+                            <label for="inputgaji">Gaji Pokok:</label>
+                            <input type="text" id="inputgaji" placeholder="Masukkan gaji pokok">
+                        </div>
+                        <div class="field">
+                            <label for="inputlain">Pendapatan Lain:</label>
+                            <input type="text" id="inputlain" placeholder="Masukkan pendapatan lain">
+                        </div>
+                    </div>
+
+                    <div id="calcemas" class="calc-group" style="display: none;">
+                        <h2>Emas</h2>
+                        <div class="field">
+                            <label for="inputemas">Berat Emas (gram):</label>
+                            <input type="text" id="inputemas" placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button class="btn-hitung" onclick="itung()">Hitung</button>
+                        <button class="btn-ulang" onclick="reset()">Reset</button>
+                    </div>
+                </section>
+
+                <section class="zakat-card result-section">
+                    <h2>Hasil Perhitungan</h2>
+                    <div class="result-list">
+                        <div class="res-item">
+                            <span>Total Harta:</span>
+                            <strong id="total">Rp 0</strong>
+                        </div>
+                        <div class="res-item">
+                            <span>Nisab:</span>
+                            <strong id="nisab">Rp 0</strong>
+                        </div>
+                        <div class="res-item">
+                            <span>Status:</span>
+                            <strong id="status">-</strong>
+                        </div>
+                        <hr>
+                        <div class="res-item final">
+                            <span>Zakat Yang Harus Dibayar:</span>
+                            <strong id="hasil">Rp 0</strong>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Marhaban</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

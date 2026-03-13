@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Dzikir - Marhaban</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Habibi" rel="stylesheet">
+</head>
+<body class="dzikir-page">
+
+    <nav>
+    <div class="logo-area">
+        <img class="logo-icon" src="../img/logo1.png" alt="Logo">
+        <h1 class="logo-text">Marhaban</h1>
+    </div>
+
+    <button id="menu-mobile" class="menu-toggle">☰</button>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="jadwal.html">Jadwal Imsakiyah</a></li>
+        <li><a href="kalzakat.html">Kalkulator Zakat</a></li>
+        <li><a href="doashur.html">Doa Sahur & Buka</a></li>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">To-Do List ▼</a>
+            <div class="dropdown-content">
+                <a href="shalat.html">Checklist Shalat</a>
+                <a href="dzikir.html">Counter Dzikir</a>
+                <a href="puasa.html">Checklist Puasa</a>
+                <a href="quran.html">Baca Qur'an</a>
+            </div>
+        </li>
+    </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="summary-section">
+            <p>Progres: <span id="percent-dzikir">0%</span></p>
+            <p id="status-display">Status: <span id="status-dzikir">Ayo Mulai Dzikir!</span></p>
+        </div>
+
+        <section class="counter-box">
+            <div class="counter-header">
+                <p>Target Dzikir Hari Ini: <strong>33</strong></p>
+            </div>
+
+            <div class="counter-display">
+                <div class="circle-content">
+                    <h2 id="angka">0</h2>
+                    <small id="target-msg" style="color: var(--gold); display: none;">Target Tercapai!</small>
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <button id="dzikir" class="btn-add">Klik Aku Untuk Tambah</button>
+                <button id="reset" class="btn-reset">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="notify" class="toast-notif">Target Tercapai! ✨</div>
+
+    <footer>
+        <p>&copy; 2026 Marhaban</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

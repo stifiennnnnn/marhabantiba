@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Shalat - Marhaban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo1.png">
+    <link href="https://fonts.googleapis.com/css?family=Habibi" rel="stylesheet">
+</head>
+<body class="shalat-page">
+
+    <nav>
+    <div class="logo-area">
+        <img class="logo-icon" src="../img/logo1.png" alt="Logo">
+        <h1 class="logo-text">Marhaban</h1>
+    </div>
+
+    <button id="menu-mobile" class="menu-toggle">☰</button>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="jadwal.html">Jadwal Imsakiyah</a></li>
+        <li><a href="kalzakat.html">Kalkulator Zakat</a></li>
+        <li><a href="doashur.html">Doa Sahur & Buka</a></li>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">To-Do List ▼</a>
+            <div class="dropdown-content">
+                <a href="shalat.html">Checklist Shalat</a>
+                <a href="dzikir.html">Counter Dzikir</a>
+                <a href="puasa.html">Checklist Puasa</a>
+                <a href="quran.html">Baca Qur'an</a>
+            </div>
+        </li>
+    </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="summary-section">       
+            <p>Ringkasan Progress Harian: <span id="global-progress-percent">0</span>%</p>
+            <p>Status Motivasi: <span id="global-motivation-status">Ayo rajin melaksanakan shalat!</span></p>
+        </div>
+
+        <section id="halaman-shalat" class="tracker-card">
+            <h2>Checklist Shalat Wajib</h2>
+            <p class="subtitle">Selesaikan 5 waktu hari ini!</p>
+            
+            <div class="progress-container">
+                <div id="shalat-bar-fill" class="progress-bar"></div>
+            </div>
+            
+            <p class="stats">Terisi: <span id="shalat-count">0</span>/5 waktu (<span id="shalat-percent">0</span>%)</p>
+            
+            <div class="list-ibadah">
+                <label class="item-check">
+                    <input type="checkbox" class="shalat-check" data-nama="Subuh">
+                    <span>Subuh</span>
+                </label>
+                <label class="item-check">
+                    <input type="checkbox" class="shalat-check" data-nama="Dzuhur">
+                    <span>Dzuhur</span>
+                </label>
+                <label class="item-check">
+                    <input type="checkbox" class="shalat-check" data-nama="Ashar">
+                    <span>Ashar</span>
+                </label>
+                <label class="item-check">
+                    <input type="checkbox" class="shalat-check" data-nama="Maghrib">
+                    <span>Maghrib</span>
+                </label>
+                <label class="item-check">
+                    <input type="checkbox" class="shalat-check" data-nama="Isya">
+                    <span>Isya</span>
+                </label>
+            </div>
+            
+            <button class="btn-reset-main" onclick="resetShalat()">Mulai Baru (Reset)</button>
+        </section>
+    </main>
+
+    <div id="custom-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h3>Hapus Checklist?</h3>
+            <p>Apakah kamu yakin ingin meriset semua progres shalat hari ini?</p>
+            <div class="modal-buttons">
+                <button class="btn-cancel" onclick="tutupModal()">Batal</button>
+                <button class="btn-confirm" onclick="eksekusiReset()">Ya, Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Marhaban</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

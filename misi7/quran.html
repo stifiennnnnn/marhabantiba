@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Qur'an - Marhaban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo1.png">
+    <link href="https://fonts.googleapis.com/css?family=Habibi" rel="stylesheet">
+</head>
+<body class="quran-page">
+
+    <nav>
+    <div class="logo-area">
+        <img class="logo-icon" src="../img/logo1.png" alt="Logo">
+        <h1 class="logo-text">Marhaban</h1>
+    </div>
+
+    <button id="menu-mobile" class="menu-toggle">☰</button>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="jadwal.html">Jadwal Imsakiyah</a></li>
+        <li><a href="kalzakat.html">Kalkulator Zakat</a></li>
+        <li><a href="doashur.html">Doa Sahur & Buka</a></li>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">To-Do List ▼</a>
+            <div class="dropdown-content">
+                <a href="shalat.html">Checklist Shalat</a>
+                <a href="dzikir.html">Counter Dzikir</a>
+                <a href="puasa.html">Checklist Puasa</a>
+                <a href="quran.html">Baca Qur'an</a>
+            </div>
+        </li>
+    </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header-banner">
+            <h1>Bacaan Qur'an</h1>
+        </header>
+
+        <section class="tracker-card">
+            <div class="summary-section">       
+                <p>Ringkasan Progress: <span id="quran-percent">0</span>%</p>
+                <p class="subtitle">Status: <span id="status-motivasi">Ayo mulai tilawah hari ini!</span></p>
+            </div>
+
+            <div class="progress-container">
+                <div id="quran-bar-fill" class="progress-bar" style="width: 0%; height: 100%; transition: width 0.5s ease;"></div>
+            </div>
+
+            <div class="zakat-grid">
+                <div class="field">
+                    <label for="target-hal">Target Halaman :</label>
+                    <input type="number" id="target-hal" max="604">
+                </div>
+                <div class="field">
+                    <label for="baca-hal">Halaman Dibaca:</label>
+                    <input type="number" id="baca-hal" min="0" max="604">
+                </div>
+            </div>
+
+            <div class="status-box-quran">
+                <p>Status: <strong id="status-otomatis">-</strong></p>
+            </div>
+
+            <button class="btn-reset-main" id="btn-simpan-quran">
+                Simpan Progress
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Marhaban</p>
+    </footer>
+
+    <div id="notify" class="toast-notif" style="display:none;">Data Tilawah Berhasil Disimpan!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
